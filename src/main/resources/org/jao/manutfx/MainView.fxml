@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<VBox xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="org.jao.manutfx.MainController">
+    <HBox spacing="10" alignment="CENTER" padding="10">
+        <TextField fx:id="numAgInput" promptText="Quantidade" />
+        <ComboBox fx:id="tipoAgInput" promptText="Tipo" />
+        <ComboBox fx:id="talaoAgInput" promptText="Talão" />
+        <DatePicker fx:id="dataInput" promptText="Data" />
+        <Button fx:id="novaReqButton" text="Confirmar" />
+    </HBox>
+    <VBox fx:id="plotBox" spacing="10" alignment="CENTER" padding="10">
+        <!-- Os gráficos de barra serão adicionados dinamicamente aqui -->
+    </VBox>
+</VBox>
